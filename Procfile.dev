@@ -1,2 +1,2 @@
-web: env RUBY_DEBUG_OPEN=true bin/rails assets:precompile && bin/rails server
+web: env bundle install && yarn install && RUBY_DEBUG_OPEN=true bin/rails assets:precompile && bin/rails server
 js: yarn build --watch
